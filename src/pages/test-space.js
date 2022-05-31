@@ -1,15 +1,14 @@
 import React from "react";
-import Head from "../components/head";
+import Layout from "../components/layout";
 
 function TestSpacePage() {
   return (
-    <main>
-
-<Head />
-      
+    
+      <Layout>
       <title>테스트 스페이스</title>
       <h1>테스트 스페이스 페이지 입니다.</h1>
-    </main>
+      </Layout>
+    
   );
 }
 
