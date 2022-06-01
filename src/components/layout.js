@@ -9,17 +9,17 @@ navLinkText,
 siteTitle,
  } from './layout.module.css';
 
-function Layout({ pageTitle, children }) {
+ function Layout({ pageTitle, children }) {
   const data = useStaticQuery(graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+        }
       }
     }
-  }
-`)
+  `);
   return (
     <>
       <div className="container">
